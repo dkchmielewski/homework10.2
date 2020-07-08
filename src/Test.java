@@ -6,7 +6,6 @@ public class Test {
 
         Computer computer = new Computer(processor, ramMemory, hardDrive);
         System.out.println(computer.toString());
-
         processor.increase();
         System.out.println(computer.toString());
         processor.increase();

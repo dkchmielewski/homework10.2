@@ -12,11 +12,12 @@ public class RamMemory extends Processor implements Scalable{
 
     @Override
     public void increase() {
-        setTemp(getTemp() + 15);
-        setTacting(getTacting() + 100);
-        if (getTemp() > getMAX_TEMP()) {
+        if (getTemp() + 15 > getMAX_TEMP()) {
             System.out.println("Nie mozna zwiekszyc taktowania");
         }
+        else
+        setTemp(getTemp() + 15);
+        setTacting(getTacting() + 100);
     }
 
     @Override

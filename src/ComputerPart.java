@@ -1,9 +1,9 @@
-public class PartInfo {
+public class ComputerPart {
     private String model;
     private String manufacturer;
     private int serialNumber;
 
-    public PartInfo(String model, String manufacturer, int serialNumber) {
+    public ComputerPart(String model, String manufacturer, int serialNumber) {
         this.model = model;
         this.manufacturer = manufacturer;
         this.serialNumber = serialNumber;

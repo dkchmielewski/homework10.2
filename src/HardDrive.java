@@ -1,5 +1,5 @@
-public class HardDrive extends PartInfo{
-    PartInfo partInfo;
+public class HardDrive extends ComputerPart {
+    ComputerPart computerPart;
     private int volume = 128;
 
     public HardDrive(String model, String manufacturer, int serialNumber) {

@@ -1,4 +1,4 @@
-public class Processor extends PartInfo implements Scalable{
+public class Processor extends ComputerPart implements Scalable{
     private int tacting = 100;
     private int temp = 30;
     private final int MAX_TEMP = 40;
@@ -29,11 +29,12 @@ public class Processor extends PartInfo implements Scalable{
 
     @Override
     public void increase() {
-        setTemp(temp + 10);
-        setTacting(tacting + 100);
-        if (temp > MAX_TEMP) {
+        if (getTemp() + 10 > getMAX_TEMP()) {
             System.out.println("Nie mozna przyspieszyc procesora");
         }
+        else
+            setTemp(getTemp() + 10);
+        setTacting(getTacting() + 100);
     }
 
     @Override
