@@ -10,6 +10,7 @@ public class Test {
         System.out.println(computer.toString());
         processor.increase();
         ramMemory.increase();
+        System.out.println(computer.toString());
 
 
     }

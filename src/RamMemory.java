@@ -15,9 +15,10 @@ public class RamMemory extends Processor implements Scalable{
         if (getTemp() + 15 > getMAX_TEMP()) {
             System.out.println("Nie mozna zwiekszyc taktowania");
         }
-        else
-        setTemp(getTemp() + 15);
-        setTacting(getTacting() + 100);
+        else if (getTemp() + 15 <= getMAX_TEMP()) {
+            setTemp(getTemp() + 15);
+            setTacting(getTacting() + 100);
+        }
     }
 
     @Override

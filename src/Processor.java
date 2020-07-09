@@ -31,10 +31,10 @@ public class Processor extends ComputerPart implements Scalable{
     public void increase() {
         if (getTemp() + 10 > getMAX_TEMP()) {
             System.out.println("Nie mozna przyspieszyc procesora");
-        }
-        else
+        } else if (getTemp() + 10 <= getMAX_TEMP()) {
             setTemp(getTemp() + 10);
-        setTacting(getTacting() + 100);
+            setTacting(getTacting() + 100);
+        }
     }
 
     @Override
